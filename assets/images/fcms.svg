@@ -1,0 +1,37 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="750" fill="#111c31"/>
+
+    <rect x="80" y="75" width="1040" height="600" rx="28" fill="#1e293b"/>
+    <rect x="80" y="75" width="1040" height="90" rx="28" fill="#24344d"/>
+
+    <circle cx="125" cy="120" r="10" fill="#64748b"/>
+    <circle cx="158" cy="120" r="10" fill="#64748b"/>
+    <circle cx="191" cy="120" r="10" fill="#64748b"/>
+
+    <rect x="130" y="210" width="260" height="320" rx="18" fill="#162235"/>
+    <rect x="430" y="210" width="260" height="140" rx="18" fill="#162235"/>
+    <rect x="730" y="210" width="340" height="140" rx="18" fill="#162235"/>
+    <rect x="430" y="390" width="640" height="140" rx="18" fill="#162235"/>
+
+    <circle cx="260" cy="310" r="65" fill="#f59e0b"/>
+    <rect x="470" y="245" width="130" height="18" rx="9" fill="#f59e0b"/>
+    <rect x="470" y="285" width="170" height="12" rx="6" fill="#64748b"/>
+
+    <rect x="770" y="245" width="160" height="18" rx="9" fill="#f59e0b"/>
+    <rect x="770" y="285" width="220" height="12" rx="6" fill="#64748b"/>
+
+    <rect x="470" y="425" width="240" height="18" rx="9" fill="#f59e0b"/>
+    <rect x="470" y="465" width="470" height="12" rx="6" fill="#64748b"/>
+
+    <text
+        x="600"
+        y="610"
+        text-anchor="middle"
+        fill="#f8fafc"
+        font-family="Arial, sans-serif"
+        font-size="36"
+        font-weight="700"
+    >
+        Freelancer &amp; Client Management System
+    </text>
+</svg>
