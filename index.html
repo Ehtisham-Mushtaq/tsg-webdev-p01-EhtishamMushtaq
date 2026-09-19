@@ -35,11 +35,12 @@
     <header class="site-header">
         <nav class="navbar container" aria-label="Main navigation">
 
-            <a href="#home" class="logo">
-                Portfolio
+            <a href="#home" class="logo" aria-label="Go to home">
+                <span class="logo-mark">EM</span>
+                <span class="logo-text">Ehtisham.</span>
             </a>
 
-            <ul class="nav-links">
+            <ul class="nav-links" id="primary-navigation">
                 <li>
                     <a href="#home">Home</a>
                 </li>
@@ -66,6 +67,7 @@
                 type="button"
                 aria-label="Open navigation menu"
                 aria-expanded="false"
+                aria-controls="primary-navigation"
             >
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -83,31 +85,88 @@
             <div class="container hero-content">
 
                 <div class="hero-text">
-                    <p class="eyebrow">Hello, I am</p>
 
-                    <h1>Ehtisham Mushtaq</h1>
+                    <p class="eyebrow">
+                        Software Engineering Student
+                    </p>
+
+                    <h1>
+                        Ehtisham Mushtaq
+                    </h1>
 
                     <p class="hero-tagline">
-                        Software Engineering Student & Aspiring Web Developer
+                        Building clean and responsive web experiences.
                     </p>
 
                     <p class="hero-description">
-                        I build clean, responsive and user-friendly web experiences
-                        while continuously improving my software development skills.
+                        I am a Software Engineering student passionate about
+                        programming, web development and solving real-world
+                        problems through technology.
                     </p>
 
                     <a href="#projects" class="btn">
-                        View My Work
+                        Explore My Projects
+                        <i class="fa-solid fa-arrow-down"></i>
                     </a>
+
                 </div>
 
-                <div class="hero-visual" aria-label="Professional profile illustration">
-                    <div class="visual-placeholder">
-                        <span>YN</span>
+
+                <div class="hero-visual">
+
+                    <div class="developer-card">
+
+                        <div class="card-top-bar">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="code-area">
+
+                            <p>
+                                <span class="code-keyword">const</span>
+                                developer = {
+                            </p>
+
+                            <p class="code-indent">
+                                name:
+                                <span class="code-value">
+                                    "Ehtisham"
+                                </span>,
+                            </p>
+
+                            <p class="code-indent">
+                                field:
+                                <span class="code-value">
+                                    "Software Engineering"
+                                </span>,
+                            </p>
+
+                            <p class="code-indent">
+                                focus:
+                                <span class="code-value">
+                                    "Web Development"
+                                </span>
+                            </p>
+
+                            <p>
+                                };
+                            </p>
+
+                            <p class="code-status">
+                                <span class="status-dot"></span>
+                                Available to learn & build
+                            </p>
+
+                        </div>
+
                     </div>
+
                 </div>
 
             </div>
+
         </section>
 
 
