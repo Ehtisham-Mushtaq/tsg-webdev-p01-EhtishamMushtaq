@@ -64,9 +64,20 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+}
+
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+section[id] {
+    scroll-margin-top: 20px;
 }
 
 
@@ -99,6 +110,15 @@ textarea {
 
 ul {
     list-style: none;
+}
+
+/* ================================
+   Keyboard Accessibility
+================================ */
+
+:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 4px;
 }
 
 
@@ -1213,4 +1233,180 @@ ul {
         gap: 20px;
         text-align: center;
     }
+}
+
+/* ================================
+   Extra Small Mobile Devices
+   Fixes for screens below 390px
+================================ */
+
+@media (max-width: 390px) {
+
+    .container {
+        width: calc(100% - 24px);
+    }
+
+
+    .navbar {
+        min-height: 66px;
+    }
+
+
+    .logo {
+        gap: 7px;
+        font-size: 1rem;
+    }
+
+
+    .logo-mark {
+        width: 34px;
+        height: 34px;
+        border-radius: 9px;
+        font-size: 0.75rem;
+    }
+
+
+    .nav-actions {
+        gap: 6px;
+    }
+
+
+    .theme-toggle,
+    .menu-toggle {
+        width: 38px;
+        height: 38px;
+    }
+
+
+    .hero {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+
+    .hero h1 {
+        font-size: clamp(2.3rem, 13vw, 3.2rem);
+    }
+
+
+    .hero-tagline {
+        font-size: 1rem;
+    }
+
+
+    .hero-description {
+        font-size: 0.9rem;
+    }
+
+
+    .developer-card {
+        width: 100%;
+        transform: none;
+    }
+
+
+    .developer-card:hover {
+        transform: translateY(-4px);
+    }
+
+
+    .code-area {
+        padding: 22px 18px;
+        font-size: 0.78rem;
+        line-height: 1.8;
+    }
+
+
+    .code-indent {
+        padding-left: 16px;
+    }
+
+
+    .about-content,
+    .contact-content {
+        min-width: 0;
+    }
+
+
+    .about-text,
+    .about-highlights,
+    .contact-form-wrapper,
+    .contact-info {
+        min-width: 0;
+    }
+
+
+    .highlight-card,
+    .contact-info-card {
+        min-width: 0;
+    }
+
+
+    .contact-info-card {
+        gap: 12px;
+    }
+
+
+    .contact-info-card p,
+    .contact-email {
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+
+    .contact-social-card {
+        min-width: 0;
+    }
+
+
+    .project-content {
+        min-width: 0;
+    }
+
+
+    .project-content h3,
+    .project-content p {
+        overflow-wrap: anywhere;
+    }
+
+
+    .footer-content {
+        width: 100%;
+    }
+
+
+    .footer-content p {
+        font-size: 0.82rem;
+        text-align: center;
+    }
+
+
+    .scroll-top {
+        right: 14px;
+        bottom: 14px;
+
+        width: 42px;
+        height: 42px;
+    }
+
+}
+
+/* ================================
+   Reduced Motion
+================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
 }
