@@ -41,6 +41,7 @@
             </a>
 
             <ul class="nav-links" id="primary-navigation">
+
                 <li>
                     <a href="#home">Home</a>
                 </li>
@@ -60,17 +61,36 @@
                 <li>
                     <a href="#contact">Contact</a>
                 </li>
+
             </ul>
 
-            <button
-                class="menu-toggle"
-                type="button"
-                aria-label="Open navigation menu"
-                aria-expanded="false"
-                aria-controls="primary-navigation"
-            >
-                <i class="fa-solid fa-bars"></i>
-            </button>
+
+            <div class="nav-actions">
+
+                <button
+                    class="theme-toggle"
+                    id="theme-toggle"
+                    type="button"
+                    aria-label="Switch to light mode"
+                    title="Switch to light mode"
+                    aria-pressed="false"
+                >
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+
+
+                <button
+                    class="menu-toggle"
+                    id="menu-toggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="primary-navigation"
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
 
         </nav>
     </header>
@@ -876,6 +896,18 @@
         </div>
 
     </footer>
+
+    
+    <!-- Scroll To Top Button -->
+    <button
+        class="scroll-top"
+        id="scroll-top"
+        type="button"
+        aria-label="Scroll to top"
+        title="Scroll to top"
+    >
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
 
     <!-- Main JavaScript -->
